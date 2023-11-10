@@ -1,62 +1,110 @@
-@media screen and (min-width: 500px) {
-	.menuapps {
-		display: none
+@media screen and (min-width: 660px) {
+	.app-bar {
+	  grid-template-columns: 1fr auto;
+	  padding: 8px 32px;
 	}
-	.navapps {
-		display: none
+   
+	.app-bar .app-bar__brand h1 {
+	  font-size: 1.5em;
 	}
-}
-@media screen and (max-width: 499px) {
-	.nav {
-		display: none
+   
+	.app-bar .app-bar__menu {
+	  display: none;
 	}
-	.navapps {
-		z-index: 10;
-		background-color: #fff;
-		width: 100%;
-		position: absolute;
-		-webkit-transform: translate(-100%, 0);
-		transform: translate(-100%, 0);
-		transition: transform 0.3s ease
+   
+	.app-bar .app-bar__navigation {
+	  position: static;
+	  width: 100%;
 	}
-	.open {
-		-webkit-transform: translate(0, 0);
-		transform: translate(0, 0)
+   
+	.app-bar .app-bar__navigation ul li {
+	  display: inline-block;
 	}
-	.navitemsapps {
-		display: list-item;
-		color: #191717 !important;
-		width: 100%;
-		text-align: left
+   
+	.app-bar .app-bar__navigation ul li a {
+	  display: inline-block;
+	  width: 120px;
+	  text-align: center;
+	  margin: 0;
 	}
-}
-@media screen and (min-width: 650px) {
-	.list_item_content {
-		padding: 16px 32px 32px 32px
+  }
+  
+  @media screen and (min-width: 800px) {
+	.app-bar .app-bar__brand h1 {
+	  font-size: 2em;
 	}
-	.list_item_title {
-		font-size: 18px
+  }
+  
+  @media screen and (min-width: 1200px) {
+	.hero {
+	  min-width: 1000px;
 	}
-	.list_item_desc {
-		font-size: 14px
+  }
+  
+  @media screen and (max-width: 1200px) {
+	.hero {
+	  width: 100%;
 	}
-}
-@media screen and (min-width: 700px) {
-	.list {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 10px;
-		grid-row-gap: 16px
+  }
+  
+  .restaurants {
+	display: grid;
+	grid-row-gap: 32px;
+  }
+  
+  @media screen and (min-width: 455px) {
+	.explore-title {
+	  font-size: 35px;
 	}
-}
-@media screen and (min-width: 900px) {
-	.list {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr
+  }
+  
+  @media screen and (min-width: 700px) {
+	.restaurants {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-column-gap: 24px;
+	  grid-row-gap: 24px;
 	}
-}
-@media screen and (min-width: 1200px) {
+	.list-desc {
+	  font-size: 14px;
+	}
+  }
+  
+  @media screen and (min-width: 900px) {
+	.restaurants {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	}
+  }
+  
+  @media screen and (min-width: 1200px) {
 	main {
-		max-width: 1200px
+	  max-width: 1200px;
 	}
-}
+  }
+  
+  @media screen and (max-width: 660px) {
+	.detail-card1 {
+	  width: 80%;
+	  overflow: hidden;
+	  margin: auto;
+	}
+  
+	.detail-name {
+	  font-size: 22px;
+	}
+	
+	.detail-categories {
+	  font-size: 20px;
+	}
+  
+	.detail-city {
+	  font-size: 21px;
+	}
+  
+	.detail-thumb {
+	  width: 90%;
+	  padding: 0px;
+	  border-radius: 10px;
+	}
+  }

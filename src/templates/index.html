@@ -3,53 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free restaurant catalogue for you">
+    <meta name="theme-color" content="#B5CB99"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="icon" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous"
+  />
+
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>    
     <title>Mangan Lae Apps</title>
+    <style>
+      @media screen and (max-width: 600px) {
+        .hero {
+          background-image: url(hero-image_4-small.jpg);
+        }
+      }
+
+      @media screen and (min-width: 601px) {
+        .hero {
+          background-image: url(hero-image_4-large.jpg);
+        }
+      }
+    </style>
 </head>
 <body>
-    <header>
-    <a href="#content" class="skip-link">Skip to content ?</a>
-    <!-- Mobile Navbar -->
-    <div class="menuapps">
-        <div class="iconmenu" id="menu"><a href="#">&#9776;</a></div>
-        <div class="logoapps">Mangan Lae Apps</div>
-        <div class="logoapps">&nbsp;</div>
-    </div>
-    <nav id="drawer" class="navapps">
-        <ul class="navlistapps">
-            <li class="navitemsapps"><a href="/">Home</a></li>
-            <li class="navitemsapps"><a href="#">Favorite</a></li>
-            <li class="navitemsapps"><a target="_blank" href="https://www.instagram.com/wilfridpurba_/">About Us</a></li>
-        </ul>-
-    </nav>
-    <!-- Dekstop Navbar -->
-    <nav class="nav">
-        <a class="logo" href="">Mangan Lae Apps</a>
-        <ul class="navlist">
-            <li class="navitems"><a href="">Home</a></li>
-            <li class="navitems"><a href="#">Favorite</a></li>
-            <li class="navitems"><a target="_blank" href="https://www.instagram.com/wilfridpurba_/">About Us</a></li>
+    <a href="#content" class="skip-link">Skip To Content</a>
+
+    <!--Navigation Bar-->
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <button id="hamburgerButton" aria-label="menu">☰</button>
+      </div>
+      <div class="app-bar__brand">
+        <h1>Mangan Lae Apps</h1>
+      </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <ul style="list-style: none;">
+          <li><a href="/">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li><a target="_blank" href="https://www.instagram.com/wilfridpurba_/" rel=”noopener noreferrer”>About Us</a></li>
         </ul>
-    </nav>
-    <!-- Jumbotron -->
-    <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('images/heros/hero.jpg');">
-        <div class="heroinner">
-            <h1 class="herotitle">Mangan Lae Apps</h1>
-            <p class="herosubtitle">Let's find the best restaurant only in Mangan Lae Apps</p>
-        </div>
+      </nav>
+    </header>
+    <!--End Navigation Bar-->
+    
+    <!--Jumbotron Element-->
+    <div class="hero" style="background-image: url('images/heros/hero.jpg');">
+
+      <div class="hero-brand">
+        <h1 class="hero-title">Mangan Lae Apps,</h1>
+        <p class="hero-desc">Let's find the best restaurant only in Mangan Lae Apps.</p>
+      </div>
     </div>
-</header>
-    <!-- Content -->
-    <main id="content">
-        <section class="content">
-            <div class="latest">
-                <h1>Explore Restaurant</h1>
-                <div class="list" id="tes"></div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
+    <!--End Jumbotron Element-->
+    
+    <section id="content" tabindex="0">
+      <main id="mainContent"></main>
+    </section>
+    
+    <!--Footer-->
     <footer>
-        <p>Copyright © 2023 - Mangan Lae Apps</p>
+      <p>Copyright © 2023 - Mangan Lae</p>
     </footer>
+    <!--End Daftar Restoran-->
+  </body>
 </body>
 </html>
